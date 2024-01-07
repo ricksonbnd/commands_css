@@ -18,13 +18,22 @@ Por conveção os **CSS EXTERNOS** são colocados dentro dos diretorios /assets/
 
 Os seletores devem estar dentro da tag `<style>`.
 
-Lista por ordem de **PRIORIDADE**
+Lista por ordem de **PRIORIDADE** (depende também da ordem escrita dentro de `<style>`)
 
 1. **Seletor por ID** busca pelo ID "único" de um elemento. Exemplo: `#idName {background: blue; color: white;}`, assim todos elementos com `id="texto-de-boas-vindas"` iram responder a esse seletor.
 1. **Seletor por Atributo** iram responder apenas os elemetos que tiverem o atributo em questão. Exemplo: `[atributoName] {background: blue; color: white;}` irá mudar todos elementos que tiverem `atributoName` como atributo. Também é possivel buscar um atributo com o valor definido como por exemplo: [atributoName="valorName"] {background: blue; color: white;}
 1. **Seletor por Classe** busca elementos pela classe seleciona, diferente do **seletor por ID**, responde a vários elementos dentro de um documento html. Os elementos podem ter mais de uma classe. Exemplo: `.className {background: blue; color: white;}`
 1. **Seletor de tags** busca elementos por uma tag html. Exemplo: `div {background: blue; color: white;}`, assim todos elementos `<div>` iram responder a esse seletor.
 1. **Seletor por Universal** serve para mudar TODO o documento html, o refencial é o `*` Exemplo: `* {background: blue; color: white;}`
+
+### COMBINADORES
+
+Tendo mente da esquerda para direita: Pai > filho > neto ...
+
+1. **Combinador de descendencia *(espaço)*** serve para selecionar os filhos de um seletor, por exemplo podemos selecionar apenas uma lista especifica dentro de outras lista. Exemplo `li li {background: blue; color: white;}`. funciona da mesma maneira para outros seletores como: `.atributoName li {background: blue; color: white;}` que seleciona apenas a lista dentro dos atributos `atributoName`.
+1. **Combinador filho *(>)*** serve para selecionar **FILHOS DIRETOS** de um seletor. Exemplo `.atributoName > li {background: blue; color: white;}` assim iram mudar os elementos da `li` que são filhos diretos do `.atributoName`.
+1. **Combinador irmão adjacente *(+)*** seleciona o **PRIMEIRO IRMÃO DIRETO** adjacente ao pai. Exemplo `.atributoName + li {background: blue; color: white;}` assim seleciona a primeira lista (li) ao lado do elemento `atributoName`. Vale lembrar que desconcidera netos e demais decendetes. Podemos visualizar também tendo o mesmo nível de indentação do `atributoName`.
+1. **Combinador irmão em geral *(+)*** seleciona o **~TODOS OS IRMÃO DIRETOS** adjacente ao pai. Exemplo `.atributoName + li {background: blue; color: white;}` assim seleciona todas as lista (li) ao lado do elemento `atributoName`.
 
 ### PROPRIEDAS E VALORES
 
