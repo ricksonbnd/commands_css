@@ -44,15 +44,36 @@ O valor é o que define o resultado junto com a propriedade seja exibina no nave
 Uma propriedade termina com `:` com espera de um valor.
 Um valor vem após uma propriedade e termina `;`. Como exemplo temos: `background: red;`
 
-### CSS COMMANDS
-
-`<link>` serve para definir um arquivo externo. Sendo útil para linkar um arquivo .css com o HTML.
-
 ### PROPRIEDADES
 
-`background:` define uma cor para o fundo de um elemento.
-`color:` define uma cor para fonte de um elemento.
+1. `background:` define uma cor para o fundo de um elemento.
+1. `color:` define uma cor para fonte de um elemento.
+1. `width` largura, precisa da unidade de medida(px, %, etc).
+    1. `min-width` a largura é definida pelo tamanho do contéudo, até o **minimo** de largura atribuida.
+    1. `max-width` a largura é definida pelo tamanho do contéudo, até o **máximo** de largura atribuida.
+1. `height` altura, precisa da unidade de medida(px, %, etc).
+    1. `min-width` a altura é definida pelo tamanho do contéudo, até o **minimo** de altura atribuida.
+    1. `max-heigth` a altura é definida pelo tamanho do contéudo, até o **máximo** de altura atribuida.
+1.  `margin` é usada para criar um espaçamento em volta das bordas do nosso elemento. Pode usar apenas um valor para definir o espaçamento para todos os lados. Ou definir 4 valores cada área em sentido hórario. Exemplo: `margin: 10px 20px 30px 40px`
+    1. `margin-top` é usado para criar uma margem na parte superior do elemento, precisa da unidade de medida. Ex: `margin: 10px`
+    1. `margin-right` é usado para criar uma margem na parte direita do elemento, precisa da unidade de medida. Ex: `margin: 20px`
+    1. `margin-bottom` é usado para criar uma margem na parte inferior do elemento, precisa da unidade de medida. Ex: `margin: 30px`
+    1. `margin-left` é usado para criar uma margem na parte esquerda do elemento, precisa da unidade de medida. Ex: `margin: 40px`
+    1. `margin: auto` é usado para centralizar o elemento na página.
+1. `padding` faz um espaçamento na parte interior do objeto com o contéudo. Possui a mesma analogia da propriedade `margin` como `padding-top, padding-left`, etc.
 
 ### ATRIBUTOS
 
 `rel=""` atributo do `<link>` para definir tipo de link.
+
+### VALORES
+
+Entende-se como palavras reservadas:
+
+1. `auto` define valores automaticos o elemento conter os contéudos dentro.
+1. `initial` define como o valor padrão inicial.
+1. `inherit` define como valor o valor herdado do pai do elemento.
+
+### CSS COMMANDS
+
+`<link>` serve para definir um arquivo externo. Sendo útil para linkar um arquivo .css com o HTML.
