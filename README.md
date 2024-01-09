@@ -54,7 +54,7 @@ Um valor vem após uma propriedade e termina `;`. Como exemplo temos: `backgroun
 1. `height` altura, precisa da unidade de medida(px, %, etc).
     1. `min-width` a altura é definida pelo tamanho do contéudo, até o **minimo** de altura atribuida.
     1. `max-heigth` a altura é definida pelo tamanho do contéudo, até o **máximo** de altura atribuida.
-1.  `margin` é usada para criar um espaçamento em volta das bordas do nosso elemento. Pode usar apenas um valor para definir o espaçamento para todos os lados. Ou definir 4 valores cada área em sentido hórario. Exemplo: `margin: 10px 20px 30px 40px`
+1. `margin` é usada para criar um espaçamento em volta das bordas do nosso elemento. Pode usar apenas um valor para definir o espaçamento para todos os lados. Ou definir 4 valores cada área em sentido hórario. Exemplo: `margin: 10px 20px 30px 40px`
     1. `margin-top` é usado para criar uma margem na parte superior do elemento, precisa da unidade de medida. Ex: `margin: 10px`
     1. `margin-right` é usado para criar uma margem na parte direita do elemento, precisa da unidade de medida. Ex: `margin: 20px`
     1. `margin-bottom` é usado para criar uma margem na parte inferior do elemento, precisa da unidade de medida. Ex: `margin: 30px`
@@ -64,11 +64,20 @@ Um valor vem após uma propriedade e termina `;`. Como exemplo temos: `backgroun
 
 ### ATRIBUTOS
 
-`rel=""` atributo do `<link>` para definir tipo de link.
+1. `rel=""` atributo do `<link>` para definir tipo de link.
+
+#### CORES
+
+1. Cores prédefinidas
+   1. `color: corName;` defina uma cor com o nome de cores prédefinidas (black, white, red, etc).
+   1. `color: rgb(redValue,greenValue,blueValue)` define a cor conforme os valores de `red`,`green` e `blue`de `0 a 255`. Exemplo para cor vermelha: `color: rgb(255,0,0)`. Pode-se usar os valores como `%`.
+   1. `color: rgba(redValue,greenValue,blueValue,alphaValue)` define cor rgb com adicição do alpha (transparencia). Alpha varia de `0 a 1`.
+   1. `color: #000000` onde os 2 primeiros digitos são referentes a valores para `red`,  os intermediarios para `green` e os dois ultimos para `blue`.
+   1. `color: hsl(hueValue,saturationValue,lightnessValue)` define com `hueValue de 0 a 360`. `saturationValue e lightnessValue` pode ser usado em %.
 
 ### VALORES
 
-Entende-se como palavras reservadas:
+Entende-se como valores reservadas:
 
 1. `auto` define valores automaticos o elemento conter os contéudos dentro.
 1. `initial` define como o valor padrão inicial.
