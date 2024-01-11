@@ -95,6 +95,12 @@ Serve para definir as posição de um objeto(imagem) dentro de um container.
 
 ### BACKGROUND
 
+`background: url(image) /position/size/repeat/attachment/origin/clip/color;`
+
+Exemple:
+
+    background: url(https://imageseila.png) top center / 200px 200px no-repeat fixed padding-box content-box red;
+
 #### BACKGROUND-IMAGE
 
 Serve para definnir ou alterar fundo dos elementos. Para templats acesse: [porjects.verou.me/css3patterns/](porjects.verou.me/css3patterns/).
@@ -148,7 +154,17 @@ Define se como o fundo preenche a área do elemento.
 `background-clip: content-box;` Define como preenchimento somente o contéudo interno do elemento. Não opreenche a área do padding.
 
 #### BACKGROUND-MERGEMODDE
-ss
+
+Define como imagem e cor de fundo dos elementos misturam entre si.
+
+1. `background-blend-mode: hard-light`
+1. `background-blend-mode: soft-light`
+1. `background-blend-mode: luminosity`
+1. `background-blend-mode: overlay`
+1. etc
+
+São efeitos gráficos que alteram a cor.
+
 ### VALORES
 
 Entende-se como valores reservadas:
